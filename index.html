@@ -8,18 +8,9 @@
 	var c=document.querySelector("#c");
 	var ctx = c.getContext("2d");
 	
-	var image = new Image();
+	ctx.fillRect(100, 100, 100, 100);
 	
-	image.onload = function(){
-		console.log("Loaded Image");
-		ctx.drawImage(image, 0, 0, c.width, c.height);
-		var savedImage = c.toDataURL();
-		window.open(savedImage);
-		
-		
-	}
-	
-	image.src = "C:\Users\Ryan\Downloads\IMG_0937.JPG";
+	ctx.strokeRect(50,50,50,0);
 	</script>
 </body>
 </html>
